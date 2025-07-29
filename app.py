@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit  as st
 import math
-import matplotlib.pyplot as plt
+
 
 data = pd.read_csv("data.csv")
 data['Date'] = pd.to_datetime(data['Date'], format='%m/%d/%y', errors='coerce')
