@@ -10,6 +10,28 @@ data = data.set_index('Date')
 #Title
 st.title("Personal Data Tracker")
 #Shows the Data
-st.line_chart(data)
-st.write(data)
+
+#Sleep Score
+st.subheader("Sleep Score")
+st.line_chart(data['Sleep Score'])
+
+#Deep Sleep Score
+st.subheader("Deep Sleep Score")
+st.line_chart(data['Deep Sleep Score'])
+
+#Hours Slept
+st.subheader("Hours Slept")
+st.line_chart(data['Hours Slept'])
+
+#Calories
+st.subheader("Calories")
+st.bar_chart(data['Calories'])
+
+#Weight
+st.subheader("Weight")
+st.line_chart(data['Weight'])
+
+#Mood
+st.subheader("Mood")
+st.line_chart(data['Mood'])
 
